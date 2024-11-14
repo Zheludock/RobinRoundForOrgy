@@ -37,7 +37,7 @@ public class ScriptExecutor {
                 new Script1(),
                 new Script2(),
                 new Script3(),
-                new Script4(),
+                //new Script4(),
                 new Script5()
                 // Добавьте скрипты сюда
         };

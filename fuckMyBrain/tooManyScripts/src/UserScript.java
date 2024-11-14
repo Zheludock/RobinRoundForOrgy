@@ -62,6 +62,7 @@ class Script4 extends UserScript {
 class Script5 extends UserScript {
     public Script5() {
         this.name = "Script5";
+        this.dependsOn = new Script4();
     }
 
     public boolean run() {
