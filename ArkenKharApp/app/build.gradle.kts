@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace = "com.example.arkenkharapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.arkenkharapp"
-        minSdk = 30
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
