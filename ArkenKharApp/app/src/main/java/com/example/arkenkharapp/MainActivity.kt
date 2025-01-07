@@ -1,6 +1,9 @@
 package com.example.arkenkharapp
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -31,5 +34,19 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    fun onOpenRomanClick(view: View) {
+        val url = "https://author.today/work/396815"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
+    fun onOpenLastClick(view: View) {
+        val url = "https://www.litres.ru/book/darya-stal/poslednie-magi-70232329/"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
     }
 }
