@@ -23,9 +23,9 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.welcomeText.text = "Welcome"
-        binding.linkToLastMages.text = "Link to Last Mages"
-        binding.linkToRoman.text = "Link to Roman"
+        binding.welcomeText.text = "Добро пожаловать в приложение Аркен_Хар!"
+        binding.linkToLastMages.text = "Рассказ \"Последние маги\""
+        binding.linkToRoman.text = "Роман \"Рубиновый Орден\" "
 
         return view
     }
