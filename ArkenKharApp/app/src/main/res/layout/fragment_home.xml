@@ -13,7 +13,7 @@
         android:layout_marginTop="50dp"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -24,7 +24,7 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:onClick="onOpenRomanClick"
-        android:textSize="20sp"
+        android:textSize="35sp"
         app:layout_constraintTop_toBottomOf="@+id/welcome_text"/>
 
     <TextView
@@ -35,7 +35,7 @@
         android:textColor="@color/white"
         android:onClick="onOpenLastClick"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@+id/link_to_last_mages"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
