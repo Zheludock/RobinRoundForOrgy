@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ArkenKharApp"
 include(":app")
+ 
