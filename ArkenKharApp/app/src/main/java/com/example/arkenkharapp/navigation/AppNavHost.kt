@@ -9,6 +9,7 @@ import com.example.arkenkharapp.ui.sreens.FirstScreen
 import com.example.arkenkharapp.ui.sreens.MagicScreen
 import com.example.arkenkharapp.ui.sreens.NpcScreen
 import com.example.arkenkharapp.ui.sreens.PlacesScreen
+import com.example.arkenkharapp.ui.sreens.SpellsScreen
 
 @Composable
 fun AppNavHost() {
@@ -22,5 +23,6 @@ fun AppNavHost() {
         composable("placesScreen") { PlacesScreen(navController) }
         composable("npcScreen") { NpcScreen(navController) }
         composable("artefactsScreen") { ArtefactsScreen(navController) }
+        composable("spellsScreen") { SpellsScreen(navController) }
     }
 }

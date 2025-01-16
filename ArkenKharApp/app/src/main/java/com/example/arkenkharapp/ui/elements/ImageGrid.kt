@@ -7,11 +7,12 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.arkenkharapp.R
 import com.example.arkenkharapp.utils.ImageItem
 
 @Composable
-fun ImageGrid(modifier: Modifier) {
+fun ImageGrid(modifier: Modifier, navHostController: NavHostController) {
     Column {
         val images = listOf(
             R.drawable.water, R.drawable.earth, R.drawable.fire,
@@ -24,7 +25,7 @@ fun ImageGrid(modifier: Modifier) {
             modifier = Modifier.padding(8.dp)
         ) {
             items(images.size) { index ->
-                ImageItem(imageResId = images[index])
+                ImageItem(imageResId = images[index], navHostController)
             }
         }
     }
